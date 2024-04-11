@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ABOUT OUR WEBSITE</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    
+    <div style={{'text-align:center'}}>
+    {% include "navbar.html" %}
+
+      <h1>HOME PAGE</h1>
+      <div>
+      <form action='/home/' method='POST'>
+        {% csrf_token %}
+        <input type='text' name='address'/>
+        <button type='submit'>SEND<button>
+      </form></div>
+      <br/>
+      {% comment %} <hr/> {% endcomment %}
+      <div style='margin:4rem'>
+
+        <h4 >WELCOME TO MY WEBSITE</h4>
+
+      </div>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>
